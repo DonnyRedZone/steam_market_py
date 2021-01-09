@@ -82,7 +82,7 @@ ___
 ___
 <h3> Find those annoying Market Hash names</h3>
 
-`SteamMarket.get_hash_name("query")`<br>
+`SteamMarket.get_hash_name("query")` <br>
 searches what you enter as your query and returns the proper market hash name usable in the rest of the code<br>
 it picks whatever is most relevant to your search , so it's helpful to be a bit more specific<br>
 Example:<br>
@@ -94,8 +94,9 @@ ___
 
 <h3> Looking up current price of item </h3>
 
-<h4>`SteamMarket.get_current_price (appid , hash_name , mode*, currency*) ` *-optional <br>
-Gets the current price of the item </h4><br>
+`SteamMarket.get_current_price (appid , hash_name , mode*, currency*) ` *-optional params <br>
+Gets the current price of the item <br>
+
 `currency` default - USD <br>
 numeric value corresponding to the currency you would like to make the call for <br>    
 you probabally want to add this dict somewhere in your code <br>
@@ -109,8 +110,7 @@ you probabally want to add this dict somewhere in your code <br>
     'CAD' : 20,
 }
 ``
-<br>
-<br> <br>
+<br> <br> <br>
 `mode` - 1 or 2 or 3 (default is 1)<br><br> 
 1. Uses Steam's Standard Api , Very Fast , Updates are slow ,Returns the lowest sell order , Api calls limited to 20 in 1 minute (put a 3 second wait between calls)<br><br>
 2. Uses Web Scraping to get current price , Slower in comparison , Updates as soon as there is a change in the lowest sell order , Returns the lowest sell order , No Call limit , DOES NOT NEED COOKIES ! , CANNOT CHANGE CURRENCY ALWAYS YOUR HOME CURRENCY <br><br> 
