@@ -75,30 +75,30 @@ ___
 
 <h3> General Parameters </h3>
 
-`appid` - Is the ID of the game you are looking items up for - [Search For Game's IDs](https://steamdb.info/search/?a=app&q=CS%3AGO&type=1&category=0)
-<br> `hash_name` - Market Hash Name of The Item you are looking up found by using `SteamMarket.get_hash_name("search term")`
+`appid` - Is the ID of the game you are looking items up for - [Search For Game's IDs](https://steamdb.info/search/?a=app&q=CS%3AGO&type=1&category=0)<br>
+`hash_name` - Market Hash Name of The Item you are looking up found by using `SteamMarket.get_hash_name("search term")`
 
 ___
 <h3> Find those annoying Market Hash names</h3>
 
-`SteamMarket.get_hash_name("query")`
-<br> searches what you enter as your query and returns the proper market hash name usable in the rest of the code
-<br> it picks whatever is most relevant to your search , so it's helpful to be a bit more specific
-<br>Example:
-<br>`SteamMarket.get_hash_name(730,"Ak Redline Minimal Wear")`
-<br> returns :
-<br> `AK-47 | Redline (Field-Tested)`
+`SteamMarket.get_hash_name("query")`<br>
+searches what you enter as your query and returns the proper market hash name usable in the rest of the code<br>
+it picks whatever is most relevant to your search , so it's helpful to be a bit more specific<br>
+Example:<br>
+`SteamMarket.get_hash_name(730,"Ak Redline Minimal Wear")`<br>
+returns :<br>
+`AK-47 | Redline (Field-Tested)`
 
 ___
 
 <h3> Looking up current price of item </h3>
 
-<h4>`SteamMarket.get_current_price (appid , hash_name , mode*, currency*) ` *-optional 
-<br> Gets the current price of the item </h4>
-<br>   `currency` default - USD 
-<br>    numeric value corresponding to the currency you would like to make the call for
-<br>    you probabally want to add this dict somewhere in your code
-<br> ``curAbbrev = {
+<h4>`SteamMarket.get_current_price (appid , hash_name , mode*, currency*) ` *-optional <br>
+Gets the current price of the item </h4><br>
+`currency` default - USD <br>
+numeric value corresponding to the currency you would like to make the call for <br>    
+you probabally want to add this dict somewhere in your code <br>
+``curAbbrev = {
     'USD' : 1,
     'GBP' : 2,
     'EUR' : 3,
@@ -109,15 +109,15 @@ ___
 }
 ``
 <br>
-<br>
-<br>`mode` - 1 or 2 or 3 (default is 1)
-<br><br> 1. Uses Steam's Standard Api , Very Fast , Updates are slow ,Returns the lowest sell order , Api calls limited to 20 in 1 minute (put a 3 second wait between calls)
-<br><br> 2. Uses Web Scraping to get current price , Slower in comparison , Updates as soon as there is a change in the lowest sell order , Returns the lowest sell order , No Call limit , DOES NOT NEED COOKIES ! , CANNOT CHANGE CURRENCY ALWAYS YOUR HOME CURRENCY
-<br><br> 3. Uses Steam's Standard **History** Api , Very Fast , Updates as soon as there is a sale , Returns the price the last item actually sold for , No call limit , cannot change currency , stays as USD (Im planning on adding the option to change this to your home one by using cookies) 
-<br><br> Example:
-<br> `SteamMarket.get_current_price(730 , 'AK-47 | Redline (Field-Tested)' , 1 , 3)`
-<br> Will return:
-<br> Somewhere around `16,21€`
+<br> <br>
+`mode` - 1 or 2 or 3 (default is 1)<br><br> 
+1. Uses Steam's Standard Api , Very Fast , Updates are slow ,Returns the lowest sell order , Api calls limited to 20 in 1 minute (put a 3 second wait between calls)<br><br>
+2. Uses Web Scraping to get current price , Slower in comparison , Updates as soon as there is a change in the lowest sell order , Returns the lowest sell order , No Call limit , DOES NOT NEED COOKIES ! , CANNOT CHANGE CURRENCY ALWAYS YOUR HOME CURRENCY <br><br> 
+3. Uses Steam's Standard **History** Api , Very Fast , Updates as soon as there is a sale , Returns the price the last item actually sold for , No call limit , cannot change currency , stays as USD (Im planning on adding the option to change this to your home one by using cookies) <br><br> 
+Example: <br>
+`SteamMarket.get_current_price(730 , 'AK-47 | Redline (Field-Tested)' , 1 , 3)`<br> 
+Will return: <br>
+Somewhere around `16,21€`
 
 ___
 
