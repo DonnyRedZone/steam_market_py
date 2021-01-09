@@ -41,8 +41,6 @@ or
 
 **Many Features of this module rely on api calls that require you to enter browser cookies for steam** <br>
 <h4> How do I get cookies!? </H4>
-![Cookie](https://i.imgur.com/RjKorCH.png) <br>
-
 1. Go to store.steampowered.com
 2. Sign in , If you sign out later in the future , you have to repeat this process
 3. Click the little padlock in the address bar <br>![Padlock](https://i.imgur.com/IbOmkIP.png) <br>
