@@ -43,7 +43,8 @@ or
 <h4> How do I get cookies!? </H4>
 1. Go to store.steampowered.com
 2. Sign in , If you sign out later in the future , you have to repeat this process
-3. Click the little padlock in the address bar <br>![Padlock](https://i.imgur.com/IbOmkIP.png) <br>
+3. Click the little padlock in the address bar <br>
+![Padlock](https://i.imgur.com/IbOmkIP.png) <br>
 4. click cookies ! <br>
 ![Cookies](https://i.imgur.com/ffnk9kJ.png)
    
