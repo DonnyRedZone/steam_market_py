@@ -171,6 +171,34 @@ ___
 
 `SteamMarket.get_price_history(appid,hash_name)` <br>
 
+Returns the full price history of an item. <br>
+
+___
+
+<h3> Getting Item Listings </h3>
+
+`SteamMarket.get_listings(appid,hash_name)` <br>
+
+Returns the amount of sell listings for an item. <br>
+
+___
+
+<h3> Getting Item's median price </h3>
+
+`SteamMarket.get_median_price(appid,hash_name)` <br>
+
+Returns the median price of an item. <br>
+
+___
+
+:) You made it! <br>
+
+Dont judge me too hard , its my first time making a pypi library and also my first time using markdown for more than a few sentences and my first time using github even <br>
+
+Thanks for checking me out <3 <br>
+
+Stay tuned for future updates <br>
+
 
        
        
