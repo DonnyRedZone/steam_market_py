@@ -95,10 +95,10 @@ ___
 
 <h4>`SteamMarket.get_current_price (appid , hash_name , mode*, currency*) ` *-optional 
 <br> Gets the current price of the item </h4>
-<br> `currency` default - USD 
-<br> numeric value corresponding to the currency you would like to make the call for
-<br> you probabally want to add this dict somewhere in your code
-<br> `curAbbrev = {
+<br>   `currency` default - USD 
+<br>    numeric value corresponding to the currency you would like to make the call for
+<br>    you probabally want to add this dict somewhere in your code
+<br> ``curAbbrev = {
     'USD' : 1,
     'GBP' : 2,
     'EUR' : 3,
@@ -107,7 +107,7 @@ ___
     'KRW' : 16,
     'CAD' : 20,
 }
-`
+``
 <br>
 <br>
 <br>`mode` - 1 or 2 or 3 (default is 1)
