@@ -62,7 +62,6 @@ def get_median_price(appid , hash_name , currency = 1) :
     return data['median_price']
 
 
-iniate_cookies()
 
 
 
