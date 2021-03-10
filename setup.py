@@ -5,9 +5,10 @@ def readme():
         return f.read()
 
 setup(name='Steam Market Py',
-      version='0.0.1',
+      version='0.0.3',
       description='Allows you to easily interact with Steam Market',
       long_description=readme(),
+      long_description_content_type='text/markdown',
       keywords = 'Steam Market API Python',
       url='http://github.com/DonnyRedZone/steam_market_py',
       author='Donny',

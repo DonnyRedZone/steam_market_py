@@ -96,7 +96,11 @@ Now you have your cookie ! Yay
         
         `SteamMarket.set_cookies("your cookie")` <br>      
         
->note : Steam Family View Breaks Everything , please turn it off     
+>note : Steam Family View Breaks Everything , please turn it off   <br>
+8. You only have to set cookies once , then it doesn't have to be in your code but you have to iniate cookies at the start of your program by using <br>
+`SteamMarket.iniate_cookies()` <br>
+
+
 
 Now cookies are done .. Yay!
 
